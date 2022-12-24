@@ -1,15 +1,15 @@
-## Part 1 zk-SNARKsとzk-STARKSの理論的背景
+## Part 1 zk-SNARKs と zk-STARKS の理論的背景
 
-- SNARKが信頼できるセットアップを必要とし、STARKがそうしない理由を2-4文で説明しなさい。
+- SNARK が信頼できるセットアップを必要とし、STARK がそうしない理由を 2-4 文で説明しなさい。
 
-- SNARKとSTARKの証明の違いをあと2つ挙げてください。
+- SNARK と STARK の証明の違いをあと 2 つ挙げてください。
 
 ## コマンド系
 
-- circomファイルをコンパイルして`sol`ファイルを生成するスクリプトを実行する。
+- circom ファイルをコンパイルして`sol`ファイルを生成するスクリプトを実行する。
 
 ```bash
-sh ./compile-HelloWorld.sh
+sh ./scripts/compile-HelloWorld.sh
 ```
 
 結果
@@ -41,22 +41,25 @@ Everything went okay, circom safe
 [INFO]  snarkJS: Reading tauG2
 [INFO]  snarkJS: Reading alphatauG1
 [INFO]  snarkJS: Reading betatauG1
-[INFO]  snarkJS: Circuit hash: 
+[INFO]  snarkJS: Circuit hash:
                 4289918f b00ce352 b426119d 49059905
                 382c440e 3439767d b58836b9 6ce102b4
                 ea11be67 46375b98 850f3fe6 d5db5730
                 122e33c7 65c9a1ec 5e9480aa cbb49b5d
 [DEBUG] snarkJS: Applying key: L Section: 0/2
 [DEBUG] snarkJS: Applying key: H Section: 0/4
-[INFO]  snarkJS: Circuit Hash: 
+[INFO]  snarkJS: Circuit Hash:
                 4289918f b00ce352 b426119d 49059905
                 382c440e 3439767d b58836b9 6ce102b4
                 ea11be67 46375b98 850f3fe6 d5db5730
                 122e33c7 65c9a1ec 5e9480aa cbb49b5d
-[INFO]  snarkJS: Contribution Hash: 
+[INFO]  snarkJS: Contribution Hash:
                 9a2e095d 01789815 adf03a32 cf4bde33
                 60d53cdb 7480ec6e ba4d21b0 d420c0cb
                 ccf869d7 6fcafa4a c553ac8e c146a57d
                 ed04dcc3 210dd0ae 25903229 bab55aaa
 ```
 
+## 検証方法
+
+1. コマンドで実行する場合

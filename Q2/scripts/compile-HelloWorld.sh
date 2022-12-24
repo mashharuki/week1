@@ -20,6 +20,7 @@ snarkjs r1cs info HelloWorld/HelloWorld.r1cs
 
 # Start a new zkey and make a contribution
 
+# Trust setup
 snarkjs groth16 setup HelloWorld/HelloWorld.r1cs powersOfTau28_hez_final_10.ptau HelloWorld/circuit_0000.zkey
 snarkjs zkey contribute HelloWorld/circuit_0000.zkey HelloWorld/circuit_final.zkey --name="1st Contributor Name" -v -e="random text"
 snarkjs zkey export verificationkey HelloWorld/circuit_final.zkey HelloWorld/verification_key.json
